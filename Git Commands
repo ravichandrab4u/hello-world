@@ -1,0 +1,33 @@
+
+
+Creating a Git Repo and Checking Commands
+git init
+git add .
+git commit -m "initial load"
+git remote add origin <Actual Git Repo URL(Can be Branch or Master)>
+git pull origin master
+git push origin master
+
+Workflow:
+Create a new Branch based on the assigned feature
+Chekcout the branch and do development
+After completing dev work create a pull request so that the code can be sent for review to other developers
+They can review the changes and merge to there branch.
+If review changes are good then merge the pull request to main branch or master 
+finally delete the branch
+
+Usually Pull requests are for merging dev changes to Master or other main branch
+
+Merging Development branch with Master
+git fetch origin master
+--This line makes sure he has any upstream commits that have been made to master since the last time updated his local repository.
+git merge master
+--The second pulls those changes (if any) from master into development
+git push origin development:master
+--The third pushes the development branch (now fully merged with master) up to origin/master
+
+
+
+
+
+
